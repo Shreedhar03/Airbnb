@@ -1,0 +1,22 @@
+.hero{
+    background: url('man-lg.jpg');
+    background-size: cover;
+}
+.home{
+    background: url('house-lg.jpg');
+    background-size: cover;
+}
+@media (max-width:600px) {
+    .hero{
+        background: url('man-sm.jpg');
+        background-size: cover;
+    }
+    
+}
+.get-started{
+    background: rgba(0, 0, 0, 0.2) url('https://a0.muscache.com/im/pictures/9d2dc3e5-fc2d-420d-a524-133be70529a3.jpg?im_q=highq&im_w=1680');
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: left;
+}
+

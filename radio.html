@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio</title>
+
+    <style>
+
+        label{
+            transition: all 0.3s;
+            background-color: rgb(1, 135, 169);
+            filter: brightness(190%);
+            /* filter: contrast(150%); */
+            border-radius: 8px;
+            /* filter: invert(50%); */
+            
+        }
+        
+        input[type=radio]:checked+label {
+            
+            background-color: rgb(1, 135, 169);
+            /* border-radius: 10px; */
+            color: white;
+            filter: brightness(90%);
+            /* filter: drop-shadow(0px 0px 7px rgb(1, 70, 91)); */
+        }
+
+        input[type=radio]:checked {
+            transform: translate3d(150px,150px);
+
+        }
+        
+
+    </style>
+</head>
+
+<body>
+
+    <div class="flex justify-center">
+        <h1 class="text-3xl text-cyan-700 mt-20">Customised Radio button</h1>
+    </div>
+
+    <div class="flex justify-center mt-24">
+        <form action="...">
+            <input id="xxl" class="size hidden cursor-pointer" type="radio" name="size">
+            <label for="xxl" class="text-xl cursor-pointer border border-cyan-600 px-3 py-2">XXL</label>
+
+            <input id="xl" class="size hidden cursor-pointer" type="radio" name="size">
+            <label for="xl"
+                class="text-xl cursor-pointer border border-cyan-600 px-3 py-2">XL</span></label>
+
+            <input id="l" class="size hidden cursor-pointer" type="radio" name="size">
+            <label for="l"
+                class="text-xl cursor-pointer border border-cyan-600 px-3 py-2">L</span></label>
+
+            <input id="sm" class="size hidden cursor-pointer" type="radio" name="size">
+            <label for="sm"
+                class="text-xl cursor-pointer border border-cyan-600 px-3 py-2">SM</span></label>
+        </form>
+    </div>
+
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
